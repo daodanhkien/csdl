@@ -1,0 +1,8 @@
+@import "./basic.css";
+
+#banner {
+    height: 200px;
+    padding: 70px 20%;
+    line-height: 30px;
+    background-color: rgb(233, 18, 18);
+}
