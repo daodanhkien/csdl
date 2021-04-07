@@ -17,7 +17,7 @@ main {
     position: relative;
 }
 
-#header {
+header {
     position: fixed;
 }
 
@@ -70,7 +70,7 @@ article {
 }
 
 div.locationAndHour {
-    padding: 5% 0;
+    padding: 5% 20%;
 }
 
 #hours {
