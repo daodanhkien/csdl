@@ -6,3 +6,82 @@
     line-height: 30px;
     background-color: rgb(233, 18, 18);
 }
+
+#search,
+span.subnav {
+    display: inline-block;
+    text-align: center;
+}
+
+span.subnav {
+    font-size: 16px;
+}
+
+aside {
+    line-height: 40px;
+    padding: 0 20%;
+}
+
+#search {
+    border: 1px black solid;
+    width: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a.subnav {
+    padding: 0 20px;
+    font-size: 14px;
+    color: black;
+    display: inline-block;
+}
+
+article {
+    padding: 5% 20%;
+    background-color: aliceblue;
+}
+
+#hot, #list {
+    padding: 5% 0;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 50%;
+    padding: 40px;
+    /* margin: 10px; */
+    border: 1px gainsboro solid;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+}
+
+#search:active ~ a.subnav {
+    display: none;
+}
+
+img.minhHoa {
+    width: 200px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.thongTin {
+    display: inline-block;
+}
+
+p.name {
+    font-weight: 550;
+}
+
+p.gia {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}

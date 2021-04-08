@@ -11,6 +11,10 @@ main {
     margin-top: 60px;
 }
 
+a {
+    font-weight: bold;
+}
+
 #sidebar {
     background: url("../img/bgSlider.jpg") no-repeat center / cover;
     height: 600px;
