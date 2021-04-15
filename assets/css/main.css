@@ -2,7 +2,7 @@
 
 header a.button {
     position: absolute;
-    right: 30%;
+    right: 5%;
     top: 50%;
     transform: translateY(-50%);
 }
