@@ -1,12 +1,5 @@
 @import "./basic.css";
 
-header a.button {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 main {
     margin-top: 60px;
 }

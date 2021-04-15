@@ -8,15 +8,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
-    background-color: rgb(207, 47, 19);
-    text-align: center;
-    height: 80px;
-    line-height: 80px;
-    color: white;
-    font-weight: bold;
-}
-
 header {
     height: 80px;
     width: 100%;
@@ -30,7 +21,7 @@ header {
 }
 
 body {
-    background-color: white;
+    background-color: #eee;
 }
 
 a {
@@ -72,4 +63,29 @@ header a.button {
     top: 50%;
     transform: translateY(-50%);
     font-weight: bold;
+}
+
+
+main {
+    width: 800px;
+    margin: 40px auto 40px;
+    line-height: 50px;
+}
+
+table {
+    width: 100%;
+    margin: 0 40px;
+}
+
+.fist {
+    width: 100px;
+}
+
+input {
+    width: 200px;
+}
+
+#submit {
+    width: 80px;
+    margin-left: 200px;
 }

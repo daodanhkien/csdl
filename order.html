@@ -18,68 +18,65 @@
                 <p>Stay up to date with our latest information.</p>
             </div>
             <aside>
-                <a href="#" id="search"><i class="ti-search"></i></a>
-                    <!-- <input type="text" name="search" id="search-box" /> -->
-                <a class="subnav" href="#hot">Most popular</a>
-                <a class="subnav" href="#list">Items</a>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
             </aside>
-            <article>
-                <h2>Most popular</h2>
-                <div id="hot">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="thongTin">
-                                        <p class="name">hamberger</p>
-                                        <p class="gioiThieu"></p>
-                                        <p class="gia">$1.0</p>
-                                    </div>
-                                    <img class="minhHoa" src="/assets/img/hamberger.jpg" alt="hamberger" />
-                                </td>
-                        </tbody>
-                    </table>
-                </div>
-
+            <article style="min-height: 800px">
                 <h2>Items</h2>
-                <div id="list">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="thongTin">
-                                        <p class="name">hamberger</p>
-                                        <p class="gioiThieu"></p>
-                                        <p class="gia">$1.0</p>
-                                    </div>
-                                    <img class="minhHoa" src="./assets/img/hamberger.jpg" alt="hamberger" />
-                                </td>
-                                <td>
-                                    <div class="thongTin">
-                                        <p class="name">banhTrang</p>
-                                        <p class="gioiThieu"></p>
-                                        <p class="gia">$3.0</p>
-                                    </div>
-                                    <img class="minhHoa" src="./assets/img/banhTrang.jpg" alt="banh Trang" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="thongTin">
-                                        <p class="name">piza</p>
-                                        <p class="gioiThieu"></p>
-                                        <p class="gia">$6.99</p>
-                                    </div>
-                                    <img class="minhHoa" src="./assets/img/piza.jpg" alt="piza" />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <ul id="list">
+                    <li>
+                        <a href="#">
+                        <div>
+                            <p>hamberger</p>
+                            <p></p>
+                            <p>$1.0</p>
+                        </div>
+                        <img class="minhHoa" src="./assets/img/hamberger.jpg" alt="hamberger" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <div>
+                            <p>banhTrang</p>
+                            <p></p>
+                            <p>$3.0</p>
+                        </div>
+                        <img class="minhHoa" src="./assets/img/banhTrang.jpg" alt="banh Trang" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <div>
+                            <p>piza</p>
+                            <p></p>
+                            <p>$6.99</p>
+                        </div>
+                        <img class="minhHoa" src="./assets/img/piza.jpg" alt="piza" />
+                        </a>
+                    </li>
+                </ul>
             </article>
         </main>
         <footer>
             <p>Copyright 2021</p>
-          </footer>
+        </footer>
+
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("list");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "inline";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
