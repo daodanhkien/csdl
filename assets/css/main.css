@@ -63,9 +63,12 @@ p.giaItem {
 }
 
 article {
-    background-color: gainsboro;
+    background-color: rgb(129, 44, 44);
 }
 
+div.info{
+    background-color: rgb(129, 44, 44);
+}
 div.locationAndHour {
     padding: 5% 20%;
 }

@@ -18,9 +18,9 @@ footer {
 }
 
 header {
-    height: 80px;
+    height: 60px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(129, 44, 44);
     background-clip: content-box;
     position: relative;
     top: 0;
@@ -48,11 +48,9 @@ a.button {
     background-color: rgb(207, 47, 19);
     color: white;
 }
-
 a.button:hover {
     background-color: red;
 }
-
 #homePage {
     display: block;
     position: absolute;

@@ -2,8 +2,8 @@
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: consolas;
+    box-sizing: border-box; 
+    font-family: Georgia;
 }
 body
 {
@@ -13,15 +13,15 @@ body
     min-height: 100vh;
     background: #111;
 }
-.container
+ .container
 {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px ;
     flex-wrap: wrap;
-}
+} 
 .container .box
 {
     position: relative;
@@ -37,7 +37,7 @@ body
 }
 .container .box:hover
 {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
 }
 .container .box::before
 {
@@ -80,7 +80,7 @@ body
     background: rgba(0,0,0,0.6);
     z-index: 2;
 }
-.container .box span::before
+/* .container .box span::before
 {
     content: '';
     position: absolute;
@@ -90,7 +90,7 @@ body
     height: 100%;
     background: rgba(255,255,255,0.1);
     pointer-events: none;
-}
+} */
 .container .box .content
 {
     position: relative;
@@ -110,7 +110,7 @@ body
     margin-bottom: 10px;
     line-height: 1.4em;
 }
-.container .box .content a
+/* .container .box .content a
 {
     display: inline-block;
     font-size: 1.1em;
@@ -119,4 +119,4 @@ body
     padding: 10px;
     text-decoration: none;
     font-weight: 700;
-}
+} */
