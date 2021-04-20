@@ -20,63 +20,70 @@
             <aside>
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
             </aside>
-            <article style="min-height: 800px">
+            <article>
                 <h2>Items</h2>
-                <ul id="list">
-                    <li>
-                        <a href="#">
-                        <div>
-                            <p>hamberger</p>
-                            <p></p>
-                            <p>$1.0</p>
-                        </div>
-                        <img class="minhHoa" src="./assets/img/hamberger.jpg" alt="hamberger" />
-                        </a>
+                <ul id="list-items">
+                    <li onclick="buy(this)">
+                       <div class="item-left">
+                          <p class="name">Piza</p>
+                          <p class="gia">5.00$</p>
+                       </div>
+                       <p class="item-right">
+                          <img class="hinhMinhHoa" src="./assets/img/piza.jpg" alt="" />
+                       </p>
                     </li>
-                    <li>
-                        <a href="#">
-                        <div>
-                            <p>banhTrang</p>
-                            <p></p>
-                            <p>$3.0</p>
-                        </div>
-                        <img class="minhHoa" src="./assets/img/banhTrang.jpg" alt="banh Trang" />
-                        </a>
+                    <li onclick="buy(this)">
+                       <div class="item-left">
+                          <p class="name">Banh Trang</p>
+                          <p class="gia">5.00$</p>
+                       </div>
+                       <p class="item-right">
+                          <img class="hinhMinhHoa" src="./assets/img/banhTrang.jpg" alt="" />
+                       </p>
                     </li>
-                    <li>
-                        <a href="#">
-                        <div>
-                            <p>piza</p>
-                            <p></p>
-                            <p>$6.99</p>
-                        </div>
-                        <img class="minhHoa" src="./assets/img/piza.jpg" alt="piza" />
-                        </a>
+                    <li onclick="buy(this)">
+                       <div class="item-left">
+                          <p class="name">hamberger</p>
+                          <p class="gia">5.00$</p>
+                       </div>
+                       <p class="item-right">
+                          <img class="hinhMinhHoa" src="./assets/img/hamberger.jpg" alt="" />
+                       </p>
+                    </li>
+                    <li onclick="buy(this)">
+                       <div class="item-left">
+                          <p class="name">Salty Beef</p>
+                          <p class="gia">5.00$</p>
+                       </div>
+                       <p class="item-right">
+                          <img class="hinhMinhHoa" src="./assets/img/Salty-Beef.jpg" alt="" />
+                       </p>
                     </li>
                 </ul>
+                <dialog id = "dialog">
+                   <h2>Order it now</h2>
+                  <form id="orderForm" method="POST" action="#">
+                     <p id="imgOrder"></p>
+                     <p>Items: </p>
+                     <p id="sizeOrder">
+                        <button type="button" class="button" onclick="changeNumber(-1)">-</button>
+                        <span id="numberOrder">0</span>
+                        <button type="button" class="button" onclick="changeNumber(1)">+</button>
+                        <!-- <span style="float: right;">Tong gia: <span id="sumPrice">0</span>&nbsp;$</span> -->
+                     </p>
+                     <p id="submitButton">
+                        <button type="button" class="cance button" onclick="cance()">X</button>
+                        <button type="button" class="ok button">$ 0</button>
+                     </p>
+                  </form>
+                </dialog>
             </article>
         </main>
         <footer>
             <p>Copyright 2021</p>
         </footer>
 
-        <script>
-            function myFunction() {
-                var input, filter, ul, li, a, i, txtValue;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("list");
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++) {
-                    a = li[i].getElementsByTagName("a")[0];
-                    txtValue = a.textContent || a.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "inline";
-                    } else {
-                        li[i].style.display = "none";
-                    }
-                }
-            }
+        <script src="./assets/script/order.js">
         </script>
     </body>
 </html>
