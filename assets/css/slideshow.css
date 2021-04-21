@@ -6,7 +6,6 @@
   }
   /* Slideshow container */
   .slideshow-container {
-    max-width: 500px;
     position: relative;
     margin: auto;
   }
@@ -20,13 +19,14 @@
     width: 100%;
     text-align: center;
   }
-   
   /* định dạng các chấm chuyển đổi các slide */
   .dot {
+    position: relative;
+    bottom: 60px;
     cursor:pointer;
     height: 13px;
     width: 13px;
-    margin: 0 2px;
+    /*margin: 0 2px;*/
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -40,17 +40,16 @@
   /* Thêm hiệu ứng khi chuyển đổi các slide */
   .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 1s;
   }
-   
   @-webkit-keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .6} 
     to {opacity: 1}
   }
    
   @keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .6} 
     to {opacity: 1}
   }

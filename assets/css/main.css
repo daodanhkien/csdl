@@ -1,5 +1,6 @@
 @import "./basic.css";
-
+@import "./neontext.css";
+@import "./slideshow.css";
 main {
     margin-top: 60px;
 }
@@ -15,7 +16,7 @@ body {
 }
 
 #sidebar {
-    background: url("../img/bgSlider.jpg") no-repeat center / cover;
+    background: url("../img/restaurant-mural-wallpaper_23-2148706052.jpg") no-repeat center / cover;
     height: 500px;
     position: relative;
 }
@@ -24,7 +25,7 @@ header {
     position: fixed;
 }
 
-div.text {
+/* div.text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +39,7 @@ div.text p {
     margin-top: 0px;
     color: white;
     font-size: 40px;
-}
+} */
 
 #maketting {
     width: 100%;
