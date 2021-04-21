@@ -26,7 +26,7 @@
                     <li onclick="buy(this)">
                        <div class="item-left">
                           <p class="name">Piza</p>
-                          <p class="gia">5.00$</p>
+                          <p><span class="gia">5.00</span>&nbsp;$</p>
                        </div>
                        <p class="item-right">
                           <img class="hinhMinhHoa" src="./assets/img/piza.jpg" alt="" />
@@ -35,7 +35,7 @@
                     <li onclick="buy(this)">
                        <div class="item-left">
                           <p class="name">Banh Trang</p>
-                          <p class="gia">5.00$</p>
+                          <p><span class="gia">5.00</span>&nbsp;$</p>
                        </div>
                        <p class="item-right">
                           <img class="hinhMinhHoa" src="./assets/img/banhTrang.jpg" alt="" />
@@ -44,7 +44,7 @@
                     <li onclick="buy(this)">
                        <div class="item-left">
                           <p class="name">hamberger</p>
-                          <p class="gia">5.00$</p>
+                          <p><span class="gia">5.00</span>&nbsp;$</p>
                        </div>
                        <p class="item-right">
                           <img class="hinhMinhHoa" src="./assets/img/hamberger.jpg" alt="" />
@@ -53,7 +53,7 @@
                     <li onclick="buy(this)">
                        <div class="item-left">
                           <p class="name">Salty Beef</p>
-                          <p class="gia">5.00$</p>
+                          <p><span class="gia">5.00</span>&nbsp;$</p>
                        </div>
                        <p class="item-right">
                           <img class="hinhMinhHoa" src="./assets/img/Salty-Beef.jpg" alt="" />
@@ -66,15 +66,15 @@
                      <p id="imgOrder"></p>
                      <p>Items: </p>
                      <p id="sizeOrder">
-                        <button type="button" class="button" onclick="changeNumber(-1)">-</button>
+                        <button type="button" class="butn" onclick="changeNumber(-1)">-</button>
                         <span id="numberOrder">0</span>
-                        <button type="button" class="button" onclick="changeNumber(1)">+</button>
-                        <!-- <span style="float: right;">Tong gia: <span id="sumPrice">0</span>&nbsp;$</span> -->
+                        <button type="button" class="butn" onclick="changeNumber(1)">+</button>
                      </p>
                      <p id="submitButton">
-                        <button type="button" class="cance button" onclick="cance()">X</button>
-                        <button type="button" class="ok button">$ 0</button>
+                        <button type="button" class="cance butn" onclick="cance()">X</button>
+                        <button type="button" class="ok butn">$&nbsp;<span id="sumValue">0</span></button>
                      </p>
+                     <span id="price" hidden>0</span>
                   </form>
                 </dialog>
             </article>

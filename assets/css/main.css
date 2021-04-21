@@ -8,6 +8,12 @@ a {
     font-weight: bold;
 }
 
+body {
+    background: url("../../img.png") top center;
+    /* background-size: contain; */
+    background-attachment: fixed;
+}
+
 #sidebar {
     background: url("../img/bgSlider.jpg") no-repeat center / cover;
     height: 500px;
@@ -62,13 +68,6 @@ p.giaItem {
     margin: 16px 0px;
 }
 
-article {
-    background-color: rgb(129, 44, 44);
-}
-
-div.info{
-    background-color: rgb(129, 44, 44);
-}
 div.locationAndHour {
     padding: 5% 20%;
 }

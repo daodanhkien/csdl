@@ -15,16 +15,20 @@ function myFunction() {
     }
 }
 function buy(ele) {
-    var dag = document.getElementById("dialog")
+    var dag = document.getElementById("dialog");
     document.getElementById("imgOrder").style.backgroundImage = "url(" + ele.getElementsByClassName("hinhMinhHoa")[0].src + ")";
+    document.getElementById("price").textContent = ele.getElementsByClassName("gia")[0].textContent;
+    if (dag.open) {
+        document.getElementById("numberOrder").textContent = 0;
+        document.getElementById("sumValue").textContent = 0;
+    }
     dag.open = true;
 }
 function changeNumber(number) {
     var num = document.getElementById("numberOrder");
     num.textContent = Number(num.textContent) +  number;
     if (Number(num.textContent) <= 0) num.textContent = 0;
-    var sum = document.getElementsByClassName("ok")[0];
-    sum.textContent = Number(num.textContent);
+    document.getElementById("sumValue").textContent = Number(num.textContent)*Number(document.getElementById("price").textContent);
 }
 function cance() {
     document.getElementById("dialog").open = false;
