@@ -8,10 +8,25 @@
         <title>Order | Cookstar</title>
     </head>
     <body>
-        <header>
-            <a href="./index.html" id="homePage">Cookstar</a>
-            <a href="./order.html" class="button">Order now</a>
-        </header>
+      <header>
+         <a href="./index.html" id="homePage">Cookstar</a>
+         <p href="./order.html" class="button" onclick="login()">Login</p>
+         <dialog id="digLogin">
+           <h2>CookStart</h2>
+           <form action="" method="POST" name="form" target="_blank">
+             <p class="signup" hidden="hidden"><input type="text" name="name" placeholder="Name" required="required" /></p>
+             <p><input type="tel" name="phone" placeholder="Phone" required="required" /></p>
+             <p><input type="password" name="password" placeholder="Password" required="required" /></p>
+             <p class="signup" hidden="hidden"><input type="email" name="email" placeholder="Email" /></p>
+             <p class="signup" hidden="hidden"><input type="text" name="address" placeholder="Address" required="required" /></p>
+             <p style="height: 50px;">
+               <a href="./getPassword.html" class="btn" target="_blank">forget password</a>
+               <span class="btn" onClick="switchForm()">Login / SignUp</span>
+             </p>
+             <p><input type="submit" class="button" value="Login" id="submitButton"/></p>
+           </form>
+         </dialog>
+       </header>
         <main>
             <div id="banner">
                 <h2>Announcement banner</h2>
@@ -23,15 +38,6 @@
             <article>
                 <h2>Items</h2>
                 <ul id="list-items">
-                    <li onclick="buy(this)">
-                       <div class="item-left">
-                          <p class="name">Piza</p>
-                          <p><span class="gia">5.00</span>&nbsp;$</p>
-                       </div>
-                       <p class="item-right">
-                          <img class="hinhMinhHoa" src="./assets/img/piza.jpg" alt="" />
-                       </p>
-                    </li>
                     <li onclick="buy(this)">
                        <div class="item-left">
                           <p class="name">Banh Trang</p>
@@ -83,7 +89,7 @@
             <p>Copyright 2021</p>
         </footer>
 
-        <script src="./assets/script/order.js">
-        </script>
+        <script src="./assets/script/order.js"></script>
+        <script src="./assets/script/login.js"></script>
     </body>
 </html>

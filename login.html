@@ -9,32 +9,24 @@
     <body>
         <header>
             <a href="./index.html" id="homePage">Cookstar</a>
-            <a href="./order.html" class="button">Order now</a>
+            <p href="./order.html" class="button" onclick="login()">Login</p>
         </header>
         <main>
-            <form action="#" method="POST">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td class="fist">Name</td>
-                            <td><input name="name" type="text" required/></td>
-                        </tr>
-                        <tr>
-                            <td class="fist">Mail</td>
-                            <td><input name="mail" type="email" required/></td>
-                        </tr>
-                        <tr>
-                            <td class="fist">Password</td>
-                            <td><input name="pass" type="password" required/></td>
-                        </tr>
-                        <tr>
-                            <td class="fist">Address</td>
-                            <td><input name="add" type="text" required/></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p><input type="submit" value="submit" id="submit"/></p>
+            <h1>CookStart</h1>
+            <form action="" method="POST" name="form" target="_blank">
+                <p class="signup" hidden="hidden"><input type="text" name="name" placeholder="Name" required="required" /></p>
+                <p><input type="tel" name="phone" placeholder="Phone" required="required" /></p>
+                <p><input type="password" name="password" placeholder="Password" required="required" /></p>
+                <p class="signup" hidden="hidden"><input type="email" name="email" placeholder="Email" /></p>
+                <p class="signup" hidden="hidden"><input type="text" name="address" placeholder="Address" required="required" /></p>
+                
+                <p style="height: 50px;">
+                    <a href="./getPassword.html" class="btn" target="_blank">forget password</a>
+                    <span class="btn" onClick="switchForm()">Login / SignUp</span>
+                </p>
+                <p><input type="submit" class="button" value="Login" id="submitButton"/></p>
             </form>
         </main>
+        <script src="./assets/script/login.js"></script>
     </body>
 </html>
