@@ -2,20 +2,67 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css" />
-        <title>Temp</title>
+        <title>Oks</title>
+        <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            font-size: 16px;
+        }
+        .img {
+            background: url("./assets/img/banhTrang.jpg") center / cover;
+            width: 200px;
+            height: 150px;
+            border-radius: 4px;
+        }
+        .items {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            background-color: #eee;
+            position: relative;
+            padding-top: 20px;
+        }
+        .abc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .items:hover .abc {
+            top: 0;
+            transform: translateX(-50%);
+        }
+        .abd {
+            position: absolute;
+            display: none;
+        }
+        .items:hover .abd {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 200px;
+        }
+        .card {
+            margin-right: 50px;
+        }
+        </style>
     </head>
     <body>
-        <button onclick="abs()">Hello</button>
-        <iframe frameborder="0" src="login.html" hidden="hiden" id="Hello" scrolling="no">
-            <p>Hello</p>
-        </iframe>
+        <div class="items">
+            <div class="abc">
+                <p class="img"></p>
+                <p class="name">Banh Trang</p>
+            </div>
+            <div class="abd">
+                <p class="gia">13 $</p>
+                <p class="order">
+                    <span class="card">Card</span>
+                    <span class="buy">Buy</span>
+                </p>
+            </div>
+        </div>
     </body>
-    <script>
-        function abs() {
-            let d = document.getElementById("Hello");
-            d.hidden = false;
-        }
-    </script>
 </html>

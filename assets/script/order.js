@@ -14,9 +14,10 @@ function myFunction() {
         }
     }
 }
-function buy(ele) {
+function buy(num) {
+    var ele = document.getElementById("list-items").getElementsByTagName("li")[num];
     var dag = document.getElementById("dialog");
-    document.getElementById("imgOrder").style.backgroundImage = "url(" + ele.getElementsByClassName("hinhMinhHoa")[0].src + ")";
+    document.getElementById("imgOrder").style.backgroundImage = ele.getElementsByClassName("img")[0].style.backgroundImage;
     document.getElementById("price").textContent = ele.getElementsByClassName("gia")[0].textContent;
     if (dag.open) {
         document.getElementById("numberOrder").textContent = 0;

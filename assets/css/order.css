@@ -42,17 +42,13 @@ article > h2 {
 }
 #list-items li {
 	display: inline-block;
-	width: 400px;
-	height: 200px;
 	position: relative;
 	top: 0;
 	left: 0;
-	margin: 20px;
-	cursor: pointer;
-	border: 1px solid #00f;
-	border-radius: 4px;
+	margin: 10px;
+	/* cursor: pointer; */
 }
-.item-left {
+/* .item-left {
 	position: absolute;
 	top: 0;
 	bottom: 50%;
@@ -75,9 +71,10 @@ article > h2 {
 .item-right .hinhMinhHoa {
 	max-width: 100%;
 	max-height: 100%;
-}
+} */
 main {
 	margin-bottom: 80px;
+	min-height: 800px;
 }
 #dialog {
 	position: fixed;
@@ -157,4 +154,51 @@ main {
 	font-size: 24px;
 	line-height: 36px;
 	width: 36px;
+}
+.items {
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	background-color: #eee;
+	position: relative;
+	padding-top: 20px;
+}
+.abc {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.items:hover .abc {
+	top: 20px;
+	transform: translateX(-50%);
+}
+.img {
+	background-position: bottom center;
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.abd {
+	position: absolute;
+	display: none;
+}
+.items:hover .abd {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 200px;
+}
+.card {
+	margin-right: 50px;
+}
+.items p {
+	line-height: 30px;
+}
+span.button {
+	width: 60px;
 }
