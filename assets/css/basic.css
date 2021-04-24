@@ -81,13 +81,13 @@ header > .button {
     left: 0;
     width: 100%;
     height: calc(100% - 60px);
-    padding: 60px 35%;
+    padding: 20px 35%;
     border: none;
     text-align: center;
 }
 #digLogin h2 {
     font-size: 36px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 /* #form {
     height: 400px;
