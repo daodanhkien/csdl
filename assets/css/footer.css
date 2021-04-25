@@ -1,0 +1,10 @@
+@import "./reset.css";
+
+footer {
+    background-color: rgb(207, 47, 19);
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+}

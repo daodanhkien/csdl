@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/slideshow.css" />
+    <title>Home | Cookstar</title>
+</head>
+
+<body>
+    <header>
+        <?php
+            include "./header.php";
+        ?>
+    </header>
+    <main>
+        <nav>
+            <p class="slide-shows"></p>
+            <p class="slide-shows"></p>
+            <p class="slide-shows"></p>
+            <p id="dot-list">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </p>
+            <a href="/order.php" class="button">Order Now</a>
+            <script src="./assets/script/slideshow.js"></script>
+        </nav>
+        
+        <article>
+            <table id="maketting">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="nameItem">Salty Beef</p>
+                            <p class="giaItem">$19.0</p>
+                            <a href="#" class="button">Order</a>
+                        </td>
+
+                        <td>
+                            <img src="./assets/img/Salty-Beef.jpg" alt="Salty Beef" class="imageItem" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p class="nameItem">Cookie</p>
+                            <p class="giaItem">$18.0</p>
+                            <a href="#" class="button">Order</a>
+                        </td>
+
+                        <td>
+                            <img src="./assets/img/cookie.jfif" alt="Cookie" class="imageItem" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <div class="info">
+            <div class="locationAndHour">
+                <div>
+                    <p>Địa chỉ: 105 Doãn Kế Thiện Cầu Giấy, Hà Nội</p>
+                    <p>Số điện thoại: (555) 555-5555</p>
+                    <p>Email: hi@mystore.com</p>
+                    <br />
+                </div>
+
+                <div>
+                    <h3 style="font-size: 30px;">Giờ mở cửa</h3>
+                    <br />
+                    <table id="hours">
+                        <thead>
+                            <tr>
+                                <th id="day">Ngày</th>
+                                <th id="open">Open</th>
+                                <th id="close">Close</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td rowspan="6" style="font-size: 20px;">9:00 am</td>
+                                <td rowspan="6" style="font-size: 20px;">5:00 pm</td>
+                            </tr>
+
+                            <tr>
+                                <td>Tuesday</td>
+                            </tr>
+
+                            <tr>
+                                <td>Wednesday</td>
+                            </tr>
+
+                            <tr>
+                                <td>Thursday</td>
+                            </tr>
+
+                            <tr>
+                                <td>Friday</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturday</td>
+                            </tr>
+
+                            <tr>
+                                <td>Sunday</td>
+                                <td colspan="2"><b>closed</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright 2021</p>
+    </footer>
+</body>
+
+</html>

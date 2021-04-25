@@ -1,0 +1,80 @@
+@import "./reset.css";
+
+footer {
+    background-color: rgb(207, 47, 19);
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#list-order > li > p {
+    padding: 4px 10px;
+    border: 1px solid #f00;
+    background-color: #eee;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+#list-order ul {
+    margin-left: 10px;
+}
+.list-items {
+	padding: 0 10% 0 15%;
+}
+.list-items li {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 10px;
+}
+main {
+	margin: 100px 0;
+    padding: 0 5%;
+}
+.items {
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	background-color: #eee;
+	position: relative;
+	padding-top: 20px;
+}
+.abc {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.items:hover .abc {
+	top: 20px;
+	transform: translateX(-50%);
+}
+.img {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 150px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.abd {
+	position: absolute;
+	display: none;
+}
+.items:hover .abd {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 200px;
+}
+.items p {
+	line-height: 30px;
+}

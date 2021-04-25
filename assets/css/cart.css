@@ -1,0 +1,166 @@
+@import "./reset.css";
+@import "./footer.css";
+
+#list-orders {
+	padding: 0 10% 0 15%;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#list-orders li {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 10px;
+}
+main {
+	margin: 80px 0;
+    padding: 0 30px;
+}
+#dialog {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 400px;
+	height: 500px;
+	border-radius: 4px;
+}
+#dialog h2 {
+	margin: 4px;
+	text-align: center;
+	color: #00f;
+}
+#dialog form {
+	position: absolute;
+	top: 40px;
+	bottom: 10px;
+	right: 10px;
+	left: 10px;
+}
+#imgOrder {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 30%;
+	background-position: center;
+	background-size: cover;
+}
+#sizeOrder {
+	text-align: left;
+	position: absolute;
+	top: 75%;
+	left: 10px;
+	right: 0;
+	bottom: 20%;
+}
+.butn {
+	width: 30px;
+	font-size: 24px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	line-height: 30px;
+	cursor: pointer;
+    outline: none;
+}
+.butn:hover {
+	border-color: #f00;
+    outline: none;
+}
+.numberOrder {
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+}
+#buyNow {
+	position: absolute;
+	top: 90%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 4px;
+}
+.ok {
+	width: calc(100% - 50px);
+	margin-left: 8px;
+	font-size: 16px;
+	padding: 4px;
+	line-height: 20px;
+	height: 28px;
+}
+.cance {
+	border-radius: 50%;
+	font-size: 24px;
+	line-height: 36px;
+	width: 36px;
+}
+.items {
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	background-color: #eee;
+	position: relative;
+	padding-top: 20px;
+}
+.abc {
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+}
+.img {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 150px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.abd {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 200px;
+}
+.items p {
+	line-height: 30px;
+}
+#butAllCart {
+    width: 400px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: 24px;
+    display: inline-block;
+    background-color: #eee;
+    line-height: 50px;
+    border: #000 1px solid;
+}
+#butAllCart:hover {
+    background-color: #fff;
+}
+#formCart {
+    text-align: center;
+    margin-top: 20px;
+}
+.xButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #000;
+	border-radius: 50%;
+}
