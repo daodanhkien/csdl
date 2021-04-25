@@ -1,1 +1,14 @@
-![IMG_20210321_185525](IMG_20210321_185525.jpg)
+# WEBSITE : COOKSTAR
+## Nội dung:
+* Người dùng sử dụng website để đặt hàng các món ăn và thức uống.
+## Chức năng:
+1. Đối với khách hàng:
+* Đăng kí và đăng nhập trước khi order.
+* Tìm kiếm đồ ăn và thức uống theo nhu cầu.
+* Thanh toán khi nhận hàng.
+2. Đối với cửa hang:
+* Quản lí thông tin sản phẩm.
+* Quản lí thông tin khách hàng.
+## Thiết kế:
+![yyy](./assets/Untitled Workspace (1).png)
+![yyy](./assets/csdl.png)
