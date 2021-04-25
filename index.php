@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/slideshow.css" />
+    <link rel="stylesheet" href="./assets/css/neontext.css" />
     <title>Home | Cookstar</title>
 </head>
 
@@ -18,8 +19,17 @@
     <main>
         <nav>
             <p class="slide-shows"></p>
+                <div class="text">
+                    <p>WELCOME !</p>
+                </div>
             <p class="slide-shows"></p>
+                <div class="text">
+                    <p>Enjoy your meal</p>
+                </div>
             <p class="slide-shows"></p>
+                <div class="text">
+                    <p>Food and Drink</p>
+                </div>
             <p id="dot-list">
                 <span class="dot" onclick="currentSlide(0)"></span>
                 <span class="dot" onclick="currentSlide(1)"></span>
