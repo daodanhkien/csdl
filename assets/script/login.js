@@ -1,31 +1,44 @@
 function login()
 {
     var login = document.getElementById("digLogin");
-    if (login.open) {
-        login.open = false;
-    } else {
-        login.open = true;
-    }
+    login.open = !login.open;
 }
 function switchForm() {
-    if (document.form.submitButton.value == "SignUp") {
-        document.form.submitButton.value = "Login";
-        var le = document.getElementsByClassName("signup");
+    var submit = document.getElementById("submitButton");
+    if (submit.value == "SignUp") {
+        submit.value = "Login";
+        let le = document.getElementsByClassName("signup");
         for (let i = 0; i < le.length; ++i)
         {
             le[i].hidden = true;
+            let tem = le[i].getElementsByTagName("input")[0];
+            tem.required = false;
         }
+        document.getElementById("acc").placeholder = "Phone / Name";
+        document.getElementById("form").action = "login.php";
     } else {
-        document.form.submitButton.value = "SignUp";
-        var le = document.getElementsByClassName("signup");
+        submit.value = "SignUp";
+        let le = document.getElementsByClassName("signup");
         for (let i = 0; i < le.length; ++i)
         {
+            let tem = le[i].getElementsByTagName("input")[0];
+            if (tem.name != "email") tem.required = true;
             le[i].hidden = false;
         }
+        document.getElementById("acc").placeholder = "Phone";
+        document.getElementById("form").action = "signup.php";
     }
+    document.getElementById("form").reset();
 }
 function sendForm() {
-    var f = document.getElementById("form");
-    f.submit();
     f.reset();
+    alert(window.location);
 }
+document.getElementById("lastLocation").value = document.location;
+// function add(l) {
+//     var ip = document.createElement('input');
+//     ip.type = "text";
+//     ip.name = "lastLocation";
+//     ip.value = document.location.href;
+//     l.appendChild(ip);
+// }

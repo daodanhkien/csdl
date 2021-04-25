@@ -11,13 +11,13 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT productName,buyPrice FROM products";
+$sql = "SELECT productName,buyPrice,image FROM products";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<br> productname: ". $row["productName"]. " - price: ". $row["buyPrice"].  "<br>";
+    echo "<br> productname: ". $row["productName"]. " - price: ". $row["buyPrice"].  "<br>". $row["image"].  "<br>";
 }
 } else {
   echo "0 results";

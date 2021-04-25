@@ -6,18 +6,17 @@
         <link rel="stylesheet" href="./assets/css/login.css" />
         <title>Login | Cookstar</title>
     </head>
-
-    
     <body>
         <header>
-            <a href="./index.html" id="homePage">Cookstar</a>
-            <p href="./order.html" class="button" onclick="login()">Login</p>
+            <a href="/" id="homePage">Cookstar</a>
+            <p class="button" onclick="login()">Login</p>
         </header>
-        <main>
+        <main style="margin-top: 80px;">
             <h1>COOKSTAR</h1>
-            <form action="login.php" method="POST" name="form" target="_blank">
+            <form action="login.php" method="POST" id="form">
+                <input type="text" name="lastLocation" id="lastLocation" hidden="hidden" />
                 <p class="signup" hidden="hidden"><input type="text" name="name" placeholder="Name" required="required" /></p>
-                <p><input type="tel" name="phone" placeholder="Phone" required="required" /></p>
+                <p><input id="acc" type="tel" name="phone" placeholder="Phone / Name" required="required" /></p>
                 <p><input type="password" name="password" placeholder="Password" required="required" /></p>
                 <p class="signup" hidden="hidden"><input type="email" name="email" placeholder="Email" /></p>
                 <p class="signup" hidden="hidden"><input type="text" name="address" placeholder="Address" required="required" /></p>
@@ -26,7 +25,7 @@
                     <a href="./getPassword.html" class="btn" target="_blank">forget password</a>
                     <span class="btn" onClick="switchForm()">Login / SignUp</span>
                 </p>
-                <p><input type="submit" class="button" value="Login" id="submitButton"/></p>
+                <p><input type="submit" onclick="sendForm()" class="button" value="Login" id="submitButton"/></p>
             </form>
         </main>
         <script src="./assets/script/login.js"></script>

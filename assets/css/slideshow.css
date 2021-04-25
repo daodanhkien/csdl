@@ -1,57 +1,45 @@
-* {
-    box-sizing:border-box
-  }
-  h2 {
-    text-align: center;
-  }
-  /* Slideshow container */
-  .slideshow-container {
-    position: relative;
-    margin: auto;
-  }
-  /* Định dạng nội dung Caption */
-  .text {
-    font-family: Impact;
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  /* định dạng các chấm chuyển đổi các slide */
-  .dot {
-    position: relative;
-    bottom: 60px;
-    cursor:pointer;
-    height: 13px;
-    width: 13px;
-    /*margin: 0 2px;*/
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  /* khi được hover, active đổi màu nền */
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-   
-  /* Thêm hiệu ứng khi chuyển đổi các slide */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
-    text-align: center;  
-  }
-  @-webkit-keyframes fade {
-    from {opacity: .6} 
-    to {opacity: 1}
-  }
-   
-  @keyframes fade {
-    from {opacity: .6} 
-    to {opacity: 1}
-  }
+nav {
+  position: relative;
+  height: 600px;
+  background-color: #333;
+}
+.slide-shows {
+  background: no-repeat center / cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: appear 2s linear;
+  text-align: center;
+}
+#dot-list {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+nav a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@keyframes appear {
+  from {opacity: 0.1;}
+  to {opacity: 1;}
+}

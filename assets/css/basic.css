@@ -22,7 +22,7 @@ header {
     width: 100%;
     background-color: rgba(129, 44, 44, 1);
     background-clip: content-box;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -71,57 +71,4 @@ header > .button {
     top: 50%;
     transform: translateY(-50%);
     font-weight: bold;
-}
-#digLogin {
-    opacity: 1.0 !important;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-clip: border-box;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 60px);
-    padding: 20px 35%;
-    border: none;
-    text-align: center;
-}
-#digLogin h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-/* #form {
-    height: 400px;
-} */
-input {
-    height: 50px;
-    padding: 0 20px;
-    margin-bottom: 28px;
-    border-radius: 16px;
-    width: 100%;
-    font-size: 16px;
-}
-input:focus {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0);
-}
-header p a {
-    float: left;
-}
-header p span {
-    float: right;
-}
-span.button {
-    float: none;
-}
-.btn {
-    height: 30px;
-    line-height: 20px;
-    text-align: center;
-    padding: 4px;
-    border: 1px solid red;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: normal;
-    background-color: #aaa;
 }

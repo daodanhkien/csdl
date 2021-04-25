@@ -1,23 +1,24 @@
 <?php
-$name = $_POST['name'];
 $phone = $_POST['phone'];
 $password = $_POST['password'];
-$email = $_POST['email'];
-$address = $_POST['address'];
 
 // Create connection
-$conn = new mysqli("localhost","root","","cookstar");
+$conn = new mysqli("localhost", "root", "", "cookstar");
 // Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$query = "SELECT name, Customer_ID FROM customers WHERE (phone = '". $phone. "' or name = '". $phone. "' ) and password = '". $password. "'";
+$result = $conn->query($query);
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    setcookie("user", $row['Customer_ID']);
+    setcookie("userName", $row['name']);
+    echo "ok";
 }
-else{
-    $stmt = $conn->prepare("insert into customers(name,phone,password,email,address) values(?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssss",$name,$phone,$password,$email,$address);
-    $execval = $stmt->execute();
-    echo $execval;
-    echo "Registration successfully...";
-    $stmt->close();
-    $conn->close();
-}
+$conn->close();
+echo $_POST['lastLocation'];
+header("Location: ". $_POST['lastLocation']);
+die();
 ?>
