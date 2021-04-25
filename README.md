@@ -10,5 +10,5 @@
 * Quản lí thông tin sản phẩm.
 * Quản lí thông tin khách hàng.
 ## Thiết kế:
-![](./assets/Untitled Workspace%20(1).png)
+![](./assets/Untitled%20Workspace%20(1).png)
 ![](./assets/csdl.png)
