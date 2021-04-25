@@ -15,3 +15,6 @@
 
 * -----
 ![](./assets/csdl.png)
+
+## Ngôn ngữ sử dụng:
+* mysql,php,html,css,javascript.
