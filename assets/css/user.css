@@ -57,20 +57,33 @@ a {
   top: calc(100% + 5px);
 }
 #user li {
-    width: 160px;
-    height: 30px;
-    line-height: 30px;
-    background-color: #eee;
-    margin: 4px;
-    border-radius: 4px;
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #eee;
+  margin: 4px;
+  border-radius: 4px;
 }
 #user li a {
-    color: #000;
-    display: block;
-    padding-left: 4px;
-    text-align: center;
+  color: #000;
+  display: block;
+  padding-left: 4px;
+  text-align: center;
 }
 #user li:hover a {
-    background-color: #333;
-    color: #f00;
+  background-color: #333;
+  color: #f00;
+}
+
+#countCart {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  transform: translate(50%, -50%);
+  font-size: 24px;
+  color: #0f0;
 }

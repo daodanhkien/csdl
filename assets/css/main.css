@@ -1,8 +1,12 @@
 @import "./reset.css";
+@import "./footer.css";
 
 main {
   margin-top: 60px;
 }
+/* body {
+  background: url('../img/img.png') top center / cover;
+} */
 a {
   font-weight: bold;
 }
@@ -44,6 +48,8 @@ p.giaItem {
 }
 div.locationAndHour {
   padding: 5% 20%;
+  border: 1px solid #000;
+  background-color: #eee;
 }
 #hours {
   width: 100%;

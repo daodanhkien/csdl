@@ -6,6 +6,7 @@
 ?>
 
 <div id="logined">
+    <!-- <p id="countCart">0</p> -->
     <p href="./order.html" class="button" onclick="nav()">
         <?php 
             echo $_COOKIE["userName"];

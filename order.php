@@ -110,7 +110,7 @@
 
         <script src="./assets/script/order.js"></script>
         <?php
-            if ($_GET['mes']) {
+            if (isset($_GET['mes'])) {
                 echo 
                 "<script> alert('". $_GET['mes']. "');
                 window.location.href = window.location.href.split('?')[0];
