@@ -63,7 +63,7 @@
                     echo "Connect DataBase failed: ". $conn->connect_error. "<br />";
                 }
 
-                if (!$ok) echo "<h1 style='text-align: center'>Loi khi tai trang</h1>";
+                if (!$ok) echo "<h1 style='text-align: center'>Sản phẩm quý khách đã mua</h1>";
             ?>
             </ul>
         </article>

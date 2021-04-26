@@ -18,7 +18,7 @@
     </header>
     <main>
         <nav>
-            <p class="slide-shows"></p>
+        <p class="slide-shows"></p>
                 <div class="text">
                     <p>WELCOME !</p>
                 </div>
@@ -30,6 +30,7 @@
                 <div class="text">
                     <p>Food and Drink</p>
                 </div>
+                
             <p id="dot-list">
                 <span class="dot" onclick="currentSlide(0)"></span>
                 <span class="dot" onclick="currentSlide(1)"></span>

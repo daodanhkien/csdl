@@ -13,8 +13,8 @@
         ?>
     </p>
     <ul id="user" hidden="hidden">
-    <li><a href="cart.php">Card</a></li>
-    <li><a href="ordered.php">Da Mua</a></li>
+    <li><a href="cart.php">Cart</a></li>
+    <li><a href="ordered.php">Bought</a></li>
     <li><a href="logout.php">Logout</a></li>
 </ul>
 </div>
